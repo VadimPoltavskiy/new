@@ -18,18 +18,19 @@ int FlipMumber(int num)
     if (num != 0)
     {
         int num1 = num < 0 ? -num : num;
-        int count=0;
-        string flipMumber="";
+        int count1=0;
+        int count2=10;
+        int flipMumber=0;
         while (num1 > 0)
             {
-                count = num1 % 10;
+                count1 = num1 % 10;
                 num1 = num1 / 10;
-                flipMumber=flipMumber + count;
+                flipMumber=flipMumber*count2 + count1;
             }
         if (num > 0)
-            return count = Convert.ToInt32(flipMumber);
+            return count1 = flipMumber;
         else
-            return count = - Convert.ToInt32(flipMumber);
+            return count1 = -flipMumber;
     }
     else
         return num;
