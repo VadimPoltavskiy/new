@@ -2,7 +2,7 @@
 int number = Convert.ToInt32(Console.ReadLine()); 
 
 if (СheckManyDigit(number, 5))
-    Console.WriteLine( FlipMumber(number)== number? $"{number} -> ДА": $"{number} -> НЕТ");
+    Console.WriteLine( FlipMumber(number) == number? $"{number} -> ДА": $"{number} -> НЕТ");
 else
     Console.WriteLine( "Введено не пятизначное число!");
 
